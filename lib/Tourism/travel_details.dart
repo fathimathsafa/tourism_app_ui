@@ -77,342 +77,130 @@ class Travel_Details extends StatelessWidget {
             padding: const EdgeInsets.only(right: 300),
             child: Text("Facility",style: TextStyle(color: Colors.black,fontSize: 25,fontWeight: FontWeight.bold),),
           ),
+          SizedBox(height: 10,),
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.only(left: 5),
                 child:
                 Container(
                   height: 100,
                   width: 100,
+                  child: Column(
+                    children: [
+                      SizedBox(height: 20,),
+                      Icon(Icons.bed_outlined,size: 30,),
+                      SizedBox(height: 20,),
+                      Text(" 2 King bed",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),)
+                    ],
+                  ),
                   decoration: BoxDecoration(
-                      color: Colors.blue,
+                      color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        spreadRadius: 3,
+                        blurRadius: 7,offset: Offset(0, 3)
+                      )
+                    ],
                     borderRadius: BorderRadius.circular(30)
                   ),
                 ),
               ),
+              SizedBox(width: 10,),
               Container(
                 height: 100,
                 width: 100,
+                child: Column(
+                  children: [
+                    SizedBox(height: 20,),
+                    Icon(Icons.shower_outlined,size: 30,),
+                    SizedBox(height: 20,),
+                    Text(" 2 Bathroom",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),)
+                  ],
+                ),
                 decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(30)
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.grey,
+                          spreadRadius: 3,
+                          blurRadius: 7,offset: Offset(0, 3)
+                      )
+                    ],                    borderRadius: BorderRadius.circular(30)
                 ),
               ),
+              SizedBox(width: 10,),
               Container(
                 height: 100,
                 width: 100,
+                child: Column(
+                  children: [
+                    SizedBox(height: 20,),
+                    Icon(Icons.pool,size: 30,),
+                    SizedBox(height: 20,),
+                    Text(" Pool",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),)
+                  ],
+                ),
                 decoration: BoxDecoration(
-                    color: Colors.blue,
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.grey,
+                          spreadRadius: 3,
+                          blurRadius: 7,offset: Offset(0, 3)
+                      )
+                    ],
                     borderRadius: BorderRadius.circular(30)
                 ),
               ),
+              SizedBox(width: 10,),
+              Container(
+                height: 100,
+                width: 70,
+                child: Column(
+                  children: [
+                    SizedBox(height: 20,),
+                    Icon(Icons.outdoor_grill_outlined,size: 30,),
+                    SizedBox(height: 20,),
+                    Text(" BBQ",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),)
+                  ],
+                ),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.grey,
+                          spreadRadius: 3,
+                          blurRadius: 7,offset: Offset(0, 3)
+                      )
+                    ],
+                    borderRadius: BorderRadius.only(topLeft:Radius.circular(30),bottomLeft: Radius.circular(30))
+                ),
+              )
+
 
             ],
-          )
-          // Padding(
-          //   padding: const EdgeInsets.symmetric(horizontal: 20),
-          //   child: SizedBox(
-          //     height: 80,
-          //     child: Row(
-          //       children: [
-          //         Text(
-          //           resort['name'],
-          //           style: const TextStyle(
-          //               color: Colors.black,
-          //               fontWeight: FontWeight.bold,
-          //               fontSize: 20),
-          //         ),
-          //         const SizedBox(
-          //           width: 50,
-          //         ),
-          //         VerticalDivider(
-          //           width: 20,
-          //           thickness: 4,
-          //           indent: 5,
-          //           endIndent: 5,
-          //           color: Colors.grey.shade300,
-          //         ),
-          //         const SizedBox(
-          //           width: 20,
-          //         ),
-          //         Expanded(
-          //             child: Container(
-          //               decoration: BoxDecoration(
-          //                   borderRadius: const BorderRadius.all(Radius.circular(8)),
-          //                   image: DecorationImage(
-          //                       image: NetworkImage(resort['image']),
-          //                       fit: BoxFit.cover)),
-          //             ))
-          //       ],
-          //     ),
-          //   ),
-          // ),
-          // Padding(
-          //   padding: const EdgeInsets.symmetric(horizontal: 20),
-          //   child: Row(
-          //     children: [
-          //       Icon(
-          //         Icons.star,
-          //         color: Colors.yellow.shade700,
-          //         size: 15,
-          //       ),
-          //       const SizedBox(
-          //         width: 2,
-          //       ),
-          //       Icon(
-          //         Icons.star,
-          //         color: Colors.yellow.shade700,
-          //         size: 15,
-          //       ),
-          //       const SizedBox(
-          //         width: 2,
-          //       ),
-          //       Icon(
-          //         Icons.star,
-          //         color: Colors.yellow.shade700,
-          //         size: 15,
-          //       ),
-          //       const SizedBox(
-          //         width: 2,
-          //       ),
-          //       Icon(
-          //         Icons.star,
-          //         color: Colors.yellow.shade700,
-          //         size: 15,
-          //       ),
-          //       const SizedBox(
-          //         width: 2,
-          //       ),
-          //       Icon(
-          //         Icons.star,
-          //         color: Colors.yellow.shade700,
-          //         size: 15,
-          //       ),
-          //       const SizedBox(
-          //         width: 10,
-          //       ),
-          //       Text(
-          //         '${resort['rating']} Rating',
-          //         style: const TextStyle(fontSize: 12, color: Colors.black),
-          //       ),
-          //     ],
-          //   ),
-          // ),
-          // const SizedBox(
-          //   height: 20,
-          // ),
-          // const Padding(
-          //   padding: EdgeInsets.symmetric(horizontal: 20),
-          //   child: Row(
-          //     children: [
-          //       Text(
-          //         'About Places',
-          //         style: TextStyle(
-          //             color: Colors.black,
-          //             fontWeight: FontWeight.bold,
-          //             fontSize: 25),
-          //       ),
-          //     ],
-          //   ),
-          // ),
-          // const SizedBox(
-          //   height: 10,
-          // ),
-          // Padding(
-          //   padding: const EdgeInsets.symmetric(horizontal: 20),
-          //   child: Row(
-          //     children: [
-          //       Text(
-          //         resort['description'],
-          //         style: const TextStyle(
-          //             color: Colors.black,
-          //             fontWeight: FontWeight.bold,
-          //             fontSize: 12),
-          //       ),
-          //     ],
-          //   ),
-          // ),
-          // const SizedBox(
-          //   height: 20,
-          // ),
-          // const Padding(
-          //   padding: EdgeInsets.symmetric(horizontal: 20),
-          //   child: Row(
-          //     children: [
-          //       Text(
-          //         'Special Facilities',
-          //         style: TextStyle(
-          //             color: Colors.black,
-          //             fontWeight: FontWeight.bold,
-          //             fontSize: 25),
-          //       ),
-          //     ],
-          //   ),
-          // ),
-          // const SizedBox(
-          //   height: 10,
-          // ),
-          // const Padding(
-          //   padding: EdgeInsets.symmetric(horizontal: 30),
-          //   child: Row(
-          //     children: [
-          //       Icon(
-          //         Icons.local_parking,
-          //         color: Colors.blue,
-          //         size: 15,
-          //       ),
-          //       SizedBox(
-          //         width: 10,
-          //       ),
-          //       Text(
-          //         'Parking',
-          //         style: TextStyle(
-          //             color: Colors.blue,
-          //             fontSize: 15,
-          //             fontWeight: FontWeight.bold),
-          //       ),
-          //       SizedBox(
-          //         width: 20,
-          //       ),
-          //       Icon(
-          //         Icons.headset_mic_outlined,
-          //         color: Colors.blue,
-          //         size: 15,
-          //       ),
-          //       SizedBox(
-          //         width: 10,
-          //       ),
-          //       Text(
-          //         '24x7 Support',
-          //         style: TextStyle(
-          //             color: Colors.blue,
-          //             fontSize: 15,
-          //             fontWeight: FontWeight.bold),
-          //       ),
-          //       SizedBox(
-          //         width: 20,
-          //       ),
-          //       Icon(
-          //         Icons.wifi,
-          //         color: Colors.blue,
-          //         size: 15,
-          //       ),
-          //       SizedBox(
-          //         width: 10,
-          //       ),
-          //       Text(
-          //         'Free Wifi',
-          //         style: TextStyle(
-          //             color: Colors.blue,
-          //             fontSize: 15,
-          //             fontWeight: FontWeight.bold),
-          //       ),
-          //     ],
-          //   ),
-          // ),
-          // const SizedBox(
-          //   height: 20,
-          // ),
-          // Container(
-          //   width: 300,
-          //   height: 200,
-          //   decoration: BoxDecoration(
-          //       borderRadius: const BorderRadius.all(Radius.circular(20)),
-          //       image: DecorationImage(
-          //           image: NetworkImage(resort['image']), fit: BoxFit.cover)),
-          // ),
-          // const SizedBox(
-          //   height: 20,
-          // ),
-          // const Padding(
-          //   padding: EdgeInsets.symmetric(horizontal: 20),
-          //   child: Row(
-          //     children: [
-          //       Text(
-          //         'Special Facilities',
-          //         style: TextStyle(
-          //             color: Colors.black,
-          //             fontWeight: FontWeight.bold,
-          //             fontSize: 25),
-          //       ),
-          //     ],
-          //   ),
-          // ),
-          // const SizedBox(
-          //   height: 20,
-          // ),
-          // Padding(
-          //   padding: const EdgeInsets.symmetric(horizontal: 40),
-          //   child: Row(
-          //     children: [
-          //       Container(
-          //         width: 50,
-          //         height: 30,
-          //         decoration: BoxDecoration(color: Colors.blue.shade200,borderRadius: const BorderRadius.all(Radius.circular(5))),
-          //         child: const Column(
-          //           children: [
-          //             Text('Adult',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 10),),
-          //             Text('02',style: TextStyle(fontSize: 10),)
-          //           ],
-          //         ),
-          //       ),
-          //       const SizedBox(width: 30,),
-          //       Container(
-          //         width: 50,
-          //         height: 30,
-          //         decoration: BoxDecoration(color: Colors.blue.shade200,borderRadius: const BorderRadius.all(Radius.circular(5))),
-          //         child: const Column(
-          //           children: [
-          //             Text('Adult',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 10),),
-          //             Text('02',style: TextStyle(fontSize: 10),)
-          //           ],
-          //         ),
-          //       ),
-          //       const SizedBox(width: 30,),
-          //       Container(
-          //         width: 50,
-          //         height: 30,
-          //         decoration: BoxDecoration(color: Colors.blue.shade200,borderRadius: const BorderRadius.all(Radius.circular(5))),
-          //         child: const Column(
-          //           children: [
-          //             Text('Adult',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 10),),
-          //             Text('02',style: TextStyle(fontSize: 10),)
-          //           ],
-          //         ),
-          //       ),
-          //       const SizedBox(width: 30,),
-          //       Container(
-          //         width: 50,
-          //         height: 30,
-          //         decoration: BoxDecoration(color: Colors.blue.shade200,borderRadius: const BorderRadius.all(Radius.circular(5))),
-          //         child: const Column(
-          //           children: [
-          //             Text('Adult',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 10),),
-          //             Text('02',style: TextStyle(fontSize: 10),)
-          //           ],
-          //         ),
-          //       ),
-          //     ],
-          //   ),
-          // ),
-          // const SizedBox(
-          //   height: 20,
-          // ),
-          // ElevatedButton(
-          //     style: ElevatedButton.styleFrom(
-          //         backgroundColor: Colors.blue,
-          //         padding: const EdgeInsets.symmetric(horizontal: 80),
-          //         shape: RoundedRectangleBorder(
-          //             borderRadius: BorderRadius.circular(5))),
-          //     onPressed: () {},
-          //     child: const Text(
-          //       'Explore Now',
-          //       style: TextStyle(
-          //           color: Colors.white,
-          //           fontWeight: FontWeight.bold,
-          //           fontSize: 10),
-          //     )),
+          ),
+          SizedBox(height: 10,),
+          Padding(
+            padding: const EdgeInsets.only(right: 180),
+            child: Text("Location Address",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 25),),
+          ),
+          SizedBox(height: 10,),
+          Padding(
+            padding: const EdgeInsets.only(right: 80),
+            child: Text( resort['place'],style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,color: Colors.grey),),
+          ),
+         SizedBox(height: 40,),
+         Container(
+           height: 50,
+           width: 200,
+           child: MaterialButton(onPressed: (){},
+             shape: StadiumBorder(),
+             color: Color(0xFF3F51B5),
+           child: Text("Explore Now",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 20),),),
+         )
         ],
       ),
     );

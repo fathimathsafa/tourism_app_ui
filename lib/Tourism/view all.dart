@@ -126,11 +126,11 @@ class Travel_ViewAll extends StatelessWidget {
           const SizedBox(height: 20,),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.indigo,
+                  backgroundColor: Color(0xFF3F51B5),
                   padding: const EdgeInsets.symmetric(horizontal: 80),
                   shape: RoundedRectangleBorder(
                       borderRadius:
-                      BorderRadius.circular(5))),
+                      BorderRadius.circular(30))),
               onPressed: () {},
               child: const Text(
                 'Explore Now',
