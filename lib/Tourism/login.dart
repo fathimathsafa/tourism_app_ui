@@ -5,15 +5,7 @@ import 'package:tourism_app_ui/Tourism/travel_details.dart';
 import 'package:tourism_app_ui/Tourism/travel_main.dart';
 
 
-void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: const Travel_Login(),
-    routes: {
-      'detailpage' : (context) => const Travel_Details()
-    },
-  ));
-}
+
 
 class Travel_Login extends StatelessWidget {
   const Travel_Login({super.key});
